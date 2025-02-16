@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <form action="city-search" id="city-search">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          id="city-input"
+          required
+        />
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+
+    <main>
+      <div class="city-detail">
+        <h1 id="city-name">Search for a city</h1>
+        <p>
+          <span id="current-day-time"></span>, cloudy
+          <br />
+          Humidity: <strong>75%</strong>, Wind:<strong>4.4km/h</strong>
+        </p>
+      </div>
+      <div class="current-temp">☁️ 6°C</div>
+      <div class="week-forecast">
+        <ul>
+          <li>
+            Sun ⛅️<br />
+            <strong>3°C</strong>
+            - 9°C
+          </li>
+          <li>
+            Mon ☀️<br />
+            <strong>2°C</strong>
+            - 8°C
+          </li>
+          <li>
+            Tue ☀️<br />
+            <strong>1°C</strong>
+            - 7°C
+          </li>
+          <li>
+            Wed ☀️<br />
+            <strong>2°C</strong>
+            - 8°C
+          </li>
+          <li>
+            Thu ⛅️<br />
+            <strong>3°C</strong>
+            - 9°C
+          </li>
+          <li>
+            Fri ☁️<br />
+            <strong>4°C</strong>
+            - 10°C
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="signature">
+      <p>
+        This project was coded by Emma Hunter and is on
+        <a href="https://github.com/emma-hunter-code" target="_blank">GitHub</a>
+        and hosted on
+        <a href="#" target="_blank">Netlify</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
