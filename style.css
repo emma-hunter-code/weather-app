@@ -1,0 +1,42 @@
+body {
+  background: blue;
+}
+
+.form-wrapper {
+  width: 440px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background: yellow;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.city-input {
+  background: pink;
+  margin: 0 auto;
+  width: 320px;
+  border: none;
+  border-top-left-radius: 5px;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.search-button {
+  background: lightblue;
+  border: none;
+  border-top-right-radius: 5px;
+  padding: 40px 42.75px 32px 35px;
+  margin-left: -4px;
+}
+
+.city-detail-wrapper {
+  width: 400px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  background: white;
+  padding: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 0;
+}

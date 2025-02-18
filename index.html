@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="city-search" id="city-search">
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        id="city-input"
-        required
-      />
-      <input type="submit" value="Search" />
-    </form>
-    <main>
+    <main class="form-wrapper">
+      <form action="city-search" id="city-search">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          id="city-input"
+          class="city-input"
+          required
+        />
+        <input type="submit" value="S" class="search-button" />
+      </form>
+    </main>
+    <main class="city-detail-wrapper">
       <h1 id="city-name">London</h1>
       <div class="city-detail">
         <span id="current-day-time">Tue 21:35</span>, cloudy
@@ -25,19 +28,19 @@
       </div>
       <br />
       <div class="current-temp">☁️ 6°C</div>
+      <footer class="signature">
+        <p>
+          This project was coded by Emma Hunter. It's
+          <a href="https://github.com/emma-hunter-code" target="_blank"
+            >open-source on GitHub</a
+          >
+          and
+          <a href="https://whatever-weather.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </main>
-    <footer class="signature">
-      <p>
-        This project was coded by Emma Hunter. It's
-        <a href="https://github.com/emma-hunter-code" target="_blank"
-          >open-source on GitHub</a
-        >
-        and
-        <a href="https://whatever-weather.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>
