@@ -1,42 +1,66 @@
+/* Change text in form
+Change colors - add transparency?
+Import and change font
+Order flexbox */
+
 body {
-  background: blue;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: white;
 }
 
 .form-wrapper {
   width: 440px;
   border: none;
-  border-radius: 5px 5px 0 0;
-  background: yellow;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 0;
 }
 
 .city-input {
-  background: pink;
+  background-color: rgba(31, 126, 150, 0.5);
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   border: none;
   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 30px;
-  font-size: 24px;
-  font-weight: bolder;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
 
 .search-button {
-  background: lightblue;
+  background: #094959;
+  width: 100%;
   border: none;
-  border-top-right-radius: 5px;
-  padding: 40px 42.75px 32px 35px;
-  margin-left: -4px;
+  padding: 15px;
 }
 
-.city-detail-wrapper {
+input[type="submit"] {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.main-wrapper {
   width: 400px;
   border: none;
   border-radius: 0 0 5px 5px;
-  background: white;
+  background-color: rgba(31, 126, 150, 0.9);
   padding: 20px 20px 20px 20px;
   margin: auto;
   margin-top: 0;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+.signature {
+  border-top: 1px solid rgba(31, 126, 150, 0.5);
+  text-align: center;
+  padding: 5px 0 0 0;
 }
