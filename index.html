@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,38 +17,46 @@
       <form action="city-search" id="city-search">
         <input
           type="search"
-          placeholder="Enter a city..."
+          placeholder="[  Enter a city  ]"
           id="city-input"
           class="city-input"
           required
         />
-        <input type="submit" value="Search" class="search-button" />
+        <input type="submit" value="search" class="search-button" />
       </form>
     </main>
     <main class="main-wrapper">
-      <div class="city-detail-wrapper">
-        <h1 id="city-name" class="city-name">London</h1>
+      <h1 id="city-name" class="city-name">Bristol</h1>
+      <div class="city-detail-temp">
         <div class="city-detail">
-          <span id="current-day-time">Tue 21:35</span>, cloudy
+          <span id="current-day-time">Tuesday 12th February, 21:35</span>
           <br />
-          Humidity: <strong>75%</strong>, Wind:<strong>4.4km/h</strong>
+          Cloudy
+          <br />
+          Humidity: <strong>75%</strong>
+          <br />
+          Wind: <strong>4.4km/h</strong>
         </div>
-        <br />
-        <div class="current-temp">☁️ 6°C</div>
+        <div class="current-temp">
+          <span class="weather-icon">☁️</span>
+          <span class="temp-value">25</span>
+          <span class="temp-unit">°C</span>
+        </div>
       </div>
-      <footer class="signature">
-        <p>
-          This project was coded by Emma Hunter. It's
-          <a href="https://github.com/emma-hunter-code" target="_blank"
-            >open-source on GitHub</a
-          >
-          and
-          <a href="https://whatever-weather.netlify.app/" target="_blank"
-            >hosted on Netlify</a
-          >
-        </p>
-      </footer>
     </main>
+    <footer class="signature">
+      <p>
+        This project was coded by
+        <a href="https://github.com/emma-hunter-code">Emma Hunter</a> It's
+        <a href="https://github.com/emma-hunter-code" target="_blank"
+          >open-source on GitHub</a
+        >
+        and
+        <a href="https://whatever-weather.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
