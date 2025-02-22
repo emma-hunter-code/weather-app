@@ -1,10 +1,6 @@
-/* 
-Change city input text to match placeholder?
-Add transition to search input and button
-*/
-
 body {
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  height: 100vh;
   color: white;
   font-family: "Roboto", serif;
 }
@@ -17,7 +13,7 @@ body {
   margin-top: 100px;
 }
 
-/* search input*/
+/* search input field*/
 
 .city-input,
 input[type="search"] {
@@ -71,7 +67,7 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-/* whole section minus search input and button*/
+/* Section including city name, details and temp*/
 
 .main-wrapper {
   width: 400px;
@@ -91,7 +87,7 @@ input[type="submit"] {
   text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
 }
 
-/* information about the city and the temp wrapper*/
+/* city details and temp wrapper*/
 
 .city-detail-temp {
   display: flex;
@@ -104,7 +100,7 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-/* large temp section, temp-value, weather-icon and temp-unit*/
+/* temp-value, weather-icon and temp-unit*/
 
 .temp-value,
 .weather-icon {
@@ -127,7 +123,7 @@ input[type="submit"] {
   top: -39px;
 }
 
-/* footer re my details*/
+/* footer with my details*/
 
 .signature {
   text-align: center;
