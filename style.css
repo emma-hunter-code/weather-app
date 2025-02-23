@@ -8,21 +8,23 @@ body {
 /* wrapper around form items, just for position*/
 
 .form-wrapper {
-  width: 440px;
+  width: 480px;
   margin: auto;
   margin-top: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* search input field*/
 
 .city-input,
 input[type="search"] {
-  background-color: rgb(49, 79, 108, 0.1);
+  background-color: whitesmoke;
   color: rgb(49, 79, 108, 0.5);
-  margin: 0 auto;
-  width: 100%;
-  border: none;
-  border-radius: 5px 5px 0 0;
+  margin: 0;
+  width: 80%;
+  border: 1px solid rgba(34, 60, 84);
+  border-radius: 5px 0 0 0;
   padding: 10px;
   font-size: 16px;
   font-family: "Roboto", serif;
@@ -30,7 +32,7 @@ input[type="search"] {
 }
 
 .city-input:hover {
-  background-color: rgb(49, 79, 108, 0.2);
+  background-color: rgb(49, 79, 108, 0.1);
 }
 
 input::placeholder {
@@ -47,8 +49,9 @@ input:hover::placeholder {
 .search-button,
 input[type="submit"] {
   background-color: rgba(34, 60, 84);
-  width: 100%;
+  width: 20%;
   border: none;
+  border-radius: 0 5px 0 0;
   cursor: pointer;
   transition: all 300ms ease-in-out;
   text-transform: uppercase;
@@ -69,7 +72,7 @@ input[type="submit"] {
 /* Section including city name, details and temp*/
 
 .main-wrapper {
-  width: 400px;
+  width: 440px;
   border: none;
   border-radius: 0 0 5px 5px;
   background-color: rgba(49, 79, 108);

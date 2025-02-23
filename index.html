@@ -13,19 +13,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="form-wrapper">
-      <form action="city-search" id="city-search">
+    <form action="city-search" id="city-search">
+      <label for="city-input" class="sr-only">City Name</label>
+      <div class="form-wrapper">
         <input
           type="search"
-          placeholder="[  Enter a city  ]"
+          placeholder="Enter a city name"
           id="city-input"
           class="city-input"
           required
         />
-        <input type="submit" value="search" class="search-button" />
-      </form>
-    </main>
-    <main class="main-wrapper">
+        <input type="submit" value="Search" class="search-button" />
+      </div>
+    </form>
+    <div class="main-wrapper">
       <h1 id="city-name" class="city-name">Bristol</h1>
       <div class="city-detail-temp">
         <div class="city-detail">
@@ -43,7 +44,7 @@
           <span class="temp-unit">°C</span>
         </div>
       </div>
-    </main>
+    </div>
     <footer class="signature">
       <p>
         This project was coded by
