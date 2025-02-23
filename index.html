@@ -14,20 +14,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="city-search" id="city-search">
-      <label for="city-input" class="sr-only">City Name</label>
-      <div class="form-wrapper">
-        <input
-          type="search"
-          placeholder="Enter a city name"
-          id="city-input"
-          class="city-input"
-          required
-        />
-        <input type="submit" value="Search" class="search-button" />
-      </div>
-    </form>
     <div class="main-wrapper">
+      <form action="city-search" id="city-search">
+        <div class="form-wrapper">
+          <input
+            type="search"
+            placeholder="Enter a city name"
+            id="city-input"
+            class="city-input"
+            required
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </div>
+      </form>
       <h1 id="city-name" class="city-name">Bristol</h1>
       <div class="city-detail-temp">
         <div class="city-detail">
