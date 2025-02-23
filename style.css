@@ -8,7 +8,7 @@ body {
 .main-wrapper {
   width: 450px;
   background-color: rgba(49, 79, 108);
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   margin: auto;
   margin-top: 100px;
   border: none;
@@ -73,7 +73,6 @@ input[type="submit"] {
 .city-detail-temp {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .date-time {
@@ -85,32 +84,32 @@ input[type="submit"] {
   font-weight: 350;
   font-size: 16px;
   margin-left: 2px;
+  padding-bottom: 20px;
 }
 
 .detail-inputs {
   font-weight: bold;
 }
 
-.temp-value,
-.weather-icon {
-  font-weight: bold;
-}
-
 .temp-value {
-  margin-left: 5px;
   margin-right: -5px;
   font-size: 70px;
-  line-height: 85px;
+  font-weight: bold;
   text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
+  position: relative;
+  top: -10px;
 }
 
 .weather-icon {
-  font-size: 30px;
+  width: 75px;
+  margin-right: -2px;
+  position: relative;
+  top: 2px;
 }
 
 .temp-unit {
   position: relative;
-  top: -39px;
+  top: -45px;
 }
 
 .signature {
