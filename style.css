@@ -7,8 +7,9 @@ body {
 
 .main-wrapper {
   width: 450px;
+  height: 200px;
   background-color: rgba(49, 79, 108);
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   margin: auto;
   margin-top: 100px;
   border: none;
@@ -20,7 +21,7 @@ body {
 input[type="search"] {
   width: 100%;
   background-color: white;
-  color: rgb(49, 79, 108);
+  color: rgba(49, 79, 108);
   margin: 0;
   padding: 10px;
   border: none;
@@ -38,7 +39,7 @@ input::placeholder {
 }
 
 .city-input:hover {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .search-button,
@@ -73,22 +74,26 @@ input[type="submit"] {
 .city-detail-temp {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .date-time {
   font-weight: bolder;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .city-detail {
-  font-weight: 350;
+  font-weight: 400;
   font-size: 16px;
   margin-left: 2px;
-  padding-bottom: 20px;
 }
 
 .detail-inputs {
   font-weight: bold;
+}
+
+.current-temp {
+  line-height: 1px;
 }
 
 .temp-value {
@@ -109,7 +114,7 @@ input[type="submit"] {
 
 .temp-unit {
   position: relative;
-  top: -50px;
+  top: -10px;
 }
 
 .signature {
