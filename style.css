@@ -83,7 +83,7 @@ input[type="submit"] {
 }
 
 .city-detail {
-  font-weight: 400;
+  font-weight: 350;
   font-size: 16px;
   margin-left: 2px;
 }
@@ -93,28 +93,23 @@ input[type="submit"] {
 }
 
 .current-temp {
-  line-height: 1px;
-}
-
-.temp-value {
-  margin-right: -5px;
-  font-size: 70px;
-  font-weight: bold;
-  text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
-  position: relative;
-  top: -10px;
+  display: flex;
 }
 
 .weather-icon {
   width: 75px;
-  margin-right: -2px;
+  margin-right: 10px;
   position: relative;
-  top: 2px;
+}
+
+.temp-value {
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
 }
 
 .temp-unit {
-  position: relative;
-  top: -10px;
+  margin-top: 10px;
 }
 
 .signature {
