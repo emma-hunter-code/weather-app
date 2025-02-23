@@ -65,7 +65,8 @@ input[type="submit"] {
 }
 
 .city-name {
-  margin: 0 0 5px 0;
+  margin: 0;
+  line-height: 30px;
   font-size: 48px;
   text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
 }
@@ -73,7 +74,12 @@ input[type="submit"] {
 .city-detail-temp {
   display: flex;
   justify-content: space-between;
-  align-items: centre;
+  align-items: center;
+}
+
+.date-time {
+  font-weight: bolder;
+  line-height: 2;
 }
 
 .city-detail {
@@ -93,6 +99,7 @@ input[type="submit"] {
 .temp-value {
   font-size: 70px;
   margin-left: 5px;
+  margin-right: -5px;
   line-height: 85px;
   text-shadow: 5px 5px 10px rgba(6, 6, 6, 0.2);
 }
