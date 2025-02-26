@@ -6,8 +6,8 @@ body {
 }
 
 .main-wrapper {
-  width: 450px;
-  height: 200px;
+  width: 475px;
+  height: 350px;
   background-color: rgba(49, 79, 108);
   padding: 20px;
   margin: auto;
@@ -110,6 +110,37 @@ input[type="submit"] {
 
 .temp-unit {
   margin-top: 10px;
+}
+
+.forecast-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-day {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  padding: 20px 0 5px 0;
+}
+
+.forecast-icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+.forecast-temps {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-temp {
+  padding: 5px;
 }
 
 .signature {
