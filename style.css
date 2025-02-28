@@ -7,7 +7,7 @@ body {
 
 .main-wrapper {
   width: 475px;
-  height: 355px;
+  height: 353px;
   background-color: rgba(49, 79, 108);
   padding: 20px;
   margin: auto;
@@ -131,8 +131,10 @@ input[type="submit"] {
 }
 
 .forecast-icon {
-  font-size: 30px;
-  text-align: center;
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-temps {
