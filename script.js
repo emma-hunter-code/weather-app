@@ -22,6 +22,8 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   humidTextElement.innerHTML = "humidity:";
   windTextElement.innerHTML = "wind:";
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -75,7 +77,15 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "a2ab500f41eaff40b9aat33a8a92f8ao";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -104,5 +114,3 @@ let searchFormElement = document.querySelector("#city-search");
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("Bristol");
-
-displayForecast();
